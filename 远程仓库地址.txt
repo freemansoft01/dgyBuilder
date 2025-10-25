@@ -1,1 +1,5 @@
 https://github.com/freemansoft01/dgyBuilder.git
+# 替换为你的 GitHub 用户名（或常用名称）
+git config --global user.name "freemansoft01"
+# 替换为你的 GitHub 注册邮箱
+git config --global user.email "707670910@qq.com"

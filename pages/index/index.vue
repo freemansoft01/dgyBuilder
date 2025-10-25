@@ -31,7 +31,7 @@
     <view class="bottom-nav">
       <view @click="switchTab(0)" class="nav-item">
         <image 
-          :src="currentTab === 0 ? '/static/icons/home-active.png' : '/static/icons/home.png'" 
+          :src="currentTab === 0 ? '/static/icons/首页-active.png' : '/static/icons/首页.png'" 
           class="nav-icon" 
           mode="widthFix" 
           alt="首页图标"
@@ -40,7 +40,7 @@
       </view>
       <view @click="switchTab(1)" class="nav-item">
         <image 
-          :src="currentTab === 1 ? '/static/icons/mall-active.png' : '/static/icons/mall.png'" 
+          :src="currentTab === 1 ? '/static/icons/商城-active.png' : '/static/icons/商城.png'" 
           class="nav-icon" 
           mode="widthFix" 
           alt="商城图标"
@@ -49,7 +49,7 @@
       </view>
       <view @click="switchTab(2)" class="nav-item">
         <image 
-          :src="currentTab === 2 ? '/static/icons/hotel-active.png' : '/static/icons/hotel.png'" 
+          :src="currentTab === 2 ? '/static/icons/酒店柜-active.png' : '/static/icons/酒店柜.png'" 
           class="nav-icon" 
           mode="widthFix" 
           alt="酒店柜图标"
@@ -58,16 +58,16 @@
       </view>
       <view @click="switchTab(3)" class="nav-item">
         <image 
-          :src="currentTab === 3 ? '/static/icons/store-active.png' : '/static/icons/store.png'" 
+          :src="currentTab === 3 ? '/static/icons/体验店-active.png' : '/static/icons/体验店.png'" 
           class="nav-icon" 
           mode="widthFix" 
           alt="体验店图标"
         ></image>
-        <text :class="currentTab === 3 ? 'nav-text active' : 'nav-text'">体验店</text>
+        <text :class="currentTab === 3 ? 'nav-text active' : 'nav-text'">我的</text>
       </view>
       <view @click="switchTab(4)" class="nav-item">
         <image 
-          :src="currentTab === 4 ? '/static/icons/mine-active.png' : '/static/icons/mine.png'" 
+          :src="currentTab === 4 ? '/static/icons/我的-active.png' : '/static/icons/我的.png'" 
           class="nav-icon" 
           mode="widthFix" 
           alt="我的图标"
