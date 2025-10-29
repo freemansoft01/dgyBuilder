@@ -1,6 +1,6 @@
 <template>
   <div class="table-container">
-    <table class="data-table">
+    <table class="data-table ">
       <thead>
         <tr>
           <th>序号</th>
@@ -35,8 +35,11 @@ export default {
   }
 }
 </script>
+
+
  
 <style scoped>
+@import "@/common/zcm-main-nvue.css"; 
 .table-container {
   padding: 20px;
 }

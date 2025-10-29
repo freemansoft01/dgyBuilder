@@ -1,5 +1,5 @@
 
-/* 其他样式保持不变 */
+/* 基础样式 */
 .container[data-v-1cf27b2a] {
   display: flex;
   flex-direction: column;
@@ -7,27 +7,29 @@
   padding: 0;
   background-color: #637991;
   min-height: 100vh;
-  padding-bottom: 3.75rem;
+  padding-bottom: 0; /* 移除底部预留空间 */
   box-sizing: border-box;
 }
-
+ 
 /* 状态栏占位 */
 .status-bar[data-v-1cf27b2a] {
   height: var(--status-bar-height);
   width: 100%;
   background-color: #637991;
 }
+ 
+/* 顶部图片样式 */
 .top-img[data-v-1cf27b2a] {
   width: 100%;
   display: block;
 }
+ 
+/* 功能按钮区域 */
 .btn-group[data-v-1cf27b2a] {
   display: flex;
   width: 100%;
   margin-top: 0;
   padding: 0;
-  margin-left: 0;
-  margin-right: 0;
 }
 .btn-item[data-v-1cf27b2a] {
   flex: 1;
@@ -40,41 +42,10 @@
   width: 100%;
   height: auto;
   display: block;
+  transition: transform 0.3s ease;
+}
+.btn-hover[data-v-1cf27b2a] {
+  opacity: 0.9;
+  transform: scale(0.98);
 }
 
-/* 底部导航栏样式 */
-.bottom-nav[data-v-1cf27b2a] {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  background-color: #637991;
-  border-top: 0px solid #eee;
-  padding: 0.3125rem 0;
-  z-index: 999;
-}
-.nav-item[data-v-1cf27b2a] {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  /* 添加点击反馈 */
-  touch-action: manipulation;
-}
-.nav-icon[data-v-1cf27b2a] {
-  width: 1.875rem;
-  height: 1.875rem;
-  margin-bottom: 0.3125rem;
-}
-.nav-text[data-v-1cf27b2a] {
-  font-size: 0.75rem;
-  color: #255899; /* 默认文字颜色 */
-}
-
-/* 选中状态样式 */
-.nav-text.active[data-v-1cf27b2a] {
-  color: #183340; /* 选中时的文字颜色 */
-  font-weight: bold;
-}

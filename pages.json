@@ -1,23 +1,20 @@
 {
   "pages": [
-    // 1. 首页：补充navigationBarTextStyle，格式紧凑统一
     {
       "path": "pages/index/index",
       "style": {
         "navigationStyle": "custom",
         "navigationBarTitleText": "首页",
-        "navigationBarTextStyle": "black" // 补充页面级属性
+        "navigationBarTextStyle": "black"
       }
     },
-    // 2. 立即预约页：同上
     {
       "path": "pages/booking/booking",
       "style": {
         "navigationBarTitleText": "立即预约",
-        "navigationBarTextStyle": "black" // 补充，支持swiper组件
+        "navigationBarTextStyle": "black"
       }
     },
-    // 3. 门店详情页：同上
     {
       "path": "pages/storeDetail/storeDetail",
       "style": {
@@ -25,7 +22,6 @@
         "navigationBarTextStyle": "black"
       }
     },
-    // 4. 合作了解页：同上
     {
       "path": "pages/cooperation/cooperation",
       "style": {
@@ -33,33 +29,77 @@
         "navigationBarTextStyle": "black"
       }
     },
-    // 5-8. 后4个页面：格式改为紧凑统一，补充缺失属性
+    // ========= 新增的 tabBar 页面 ========= 
     {
-      "path": "pages/doll/doll",
-       "style": { "navigationBarTitleText": "实体娃娃页面", "navigationBarTextStyle": "black" }
-    },
-    {
-      "path": "pages/fun/fun",
+      "path": "pages/shop/shop",
       "style": {
-        "navigationBarTitleText": "",
+        "navigationBarTitleText": "商城",
         "navigationBarTextStyle": "black"
       }
     },
     {
-      "path": "pages/custom/custom",
+      "path": "pages/hotel/hotel",
       "style": {
-        "navigationBarTitleText": "",
+        "navigationBarTitleText": "酒店柜",
         "navigationBarTextStyle": "black"
       }
     },
     {
-      "path": "pages/support/support",
+      "path": "pages/store/store",
       "style": {
-        "navigationBarTitleText": "",
+        "navigationBarTitleText": "体验店",
+        "navigationBarTextStyle": "black"
+      }
+    },
+    {
+      "path": "pages/mine/mine",
+      "style": {
+        "navigationBarTitleText": "我的",
         "navigationBarTextStyle": "black"
       }
     }
   ],
+  
+  // ========= 修复的 tabBar 配置 ========= 
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#183340",
+    "backgroundColor": "#637991",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "static/icons/home.png", 
+        "selectedIconPath": "static/icons/home-active.png" 
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "商城",
+        "iconPath": "static/icons/商城.png", 
+        "selectedIconPath": "static/icons/商城-active.png" 
+      },
+      {
+        "pagePath": "pages/hotel/hotel",
+        "text": "酒店柜",
+        "iconPath": "static/icons/酒店柜.png", 
+        "selectedIconPath": "static/icons/酒店柜-active.png" 
+      },
+      {
+        "pagePath": "pages/store/store",
+        "text": "体验店",
+        "iconPath": "static/icons/体验店.png", 
+        "selectedIconPath": "static/icons/体验店-active.png" 
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/icons/我的.png", 
+        "selectedIconPath": "static/icons/我的-active.png" 
+      }
+    ]
+  },
+ 
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "UniApp",

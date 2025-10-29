@@ -34,7 +34,6 @@
     },
     "popGesture": "close",
     "launchwebview": {
-      "render": "always",
       "id": "1",
       "kernel": "WKWebview"
     },
@@ -79,6 +78,12 @@
       "enable": false
     },
     "allowsInlineMediaPlayback": true,
+    "safearea": {
+      "background": "#637991",
+      "bottom": {
+        "offset": "auto"
+      }
+    },
     "uni-app": {
       "control": "uni-v3",
       "vueVersion": "3",
@@ -92,6 +97,56 @@
       "webView": {
         "minUserAgentVersion": "49.0"
       }
+    },
+    "tabBar": {
+      "position": "bottom",
+      "color": "#7A7E83",
+      "selectedColor": "#183340",
+      "borderStyle": "rgba(0,0,0,0.4)",
+      "blurEffect": "none",
+      "fontSize": "10px",
+      "iconWidth": "24px",
+      "spacing": "3px",
+      "height": "50px",
+      "list": [
+        {
+          "pagePath": "pages/index/index",
+          "text": "首页",
+          "iconPath": "/static/icons/home.png",
+          "selectedIconPath": "/static/icons/home-active.png"
+        },
+        {
+          "pagePath": "pages/shop/shop",
+          "text": "商城",
+          "iconPath": "/static/icons/商城.png",
+          "selectedIconPath": "/static/icons/商城-active.png"
+        },
+        {
+          "pagePath": "pages/hotel/hotel",
+          "text": "酒店柜",
+          "iconPath": "/static/icons/酒店柜.png",
+          "selectedIconPath": "/static/icons/酒店柜-active.png"
+        },
+        {
+          "pagePath": "pages/store/store",
+          "text": "体验店",
+          "iconPath": "/static/icons/体验店.png",
+          "selectedIconPath": "/static/icons/体验店-active.png"
+        },
+        {
+          "pagePath": "pages/mine/mine",
+          "text": "我的",
+          "iconPath": "/static/icons/我的.png",
+          "selectedIconPath": "/static/icons/我的-active.png"
+        }
+      ],
+      "backgroundColor": "#637991",
+      "selectedIndex": 0,
+      "shown": true,
+      "child": [
+        "lauchwebview"
+      ],
+      "selected": 0
     }
   },
   "app-harmony": {
@@ -101,6 +156,12 @@
     },
     "uniStatistics": {
       "enable": false
+    },
+    "safearea": {
+      "background": "#637991",
+      "bottom": {
+        "offset": "auto"
+      }
     }
   },
   "launch_path": "__uniappview.html"

@@ -5,6 +5,10 @@ import Vue from 'vue'
 import './uni.promisify.adaptor'
 Vue.config.productionTip = false
 App.mpType = 'app'
+
+// 在这里引入通用样式 
+import '@/common/common.css' 
+
 const app = new Vue({
   ...App
 })
